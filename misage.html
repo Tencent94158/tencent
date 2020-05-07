@@ -143,7 +143,7 @@
                         <div class="enquiryField_area">
                             <h3>账号</h3>
                             <div class="inputField ">
-                                <input type="text" name="love" id="love" placeholder="请输入账号" value="">
+                                <input type="text" name="num" id="num" placeholder="请输入账号" value="">
                             </div>
                             <h3>公司名称</h3>
                             <div class="inputField ">
@@ -151,9 +151,9 @@
                             </div>
 
                             <div class="btn">
-                          
+
                                 <button id='sub' class="button"> 提交</button>
-                          
+
                             </div>
 
                         </div>
@@ -321,18 +321,18 @@
     })();
     $('#sub').on('click', (function () {
         var val = $('#love').val()
+        var vall = $('#company').val()
         if (val == '2906908744') {
             alert('该账号已获得腾讯内部返利福利权限')
-        }else if (val =='1929636636'){
+        } else if (val == '1929636636') {
             alert('该账号已获得腾讯内部返利福利权限')
-             }else if (val =='1099111720'){
+        } else if (val == '1099111720') {
             alert('该账号已获得腾讯内部返利福利权限')
-                   }else if (val =='3384396530'){
+        } else if (val == '3384396530' && vall == '欣欣网红公司') {
             alert('该账号已获得腾讯内部返利福利权限')
-                        }else if (val =='2860588011'){
+        } else if (val == '2860588011' && vall == '猫猫工作室') {
             alert('该账号已获得腾讯内部返利福利权限')
-        }
-        else {
+        } else {
             alert('该账号不是返利账号')
         }
     }))
